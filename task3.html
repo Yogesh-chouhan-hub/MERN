@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body onload="age()">
+   <h1>GEN-Z Registration form</h1>
+   <hr>
+    <div><h2 class="title1">Enter Naame :</h2> <input type="type" id="inp1" placeholder="Enter name"></div>
+    <div><h2 class="title2">Mobile number :</h2> <input type="number" id="inp2" placeholder="Mobile No."></div>
+    <div><h2 class="title3">Local Address :</h2> <input type="type" id="inp3" placeholder="Address"></div>
+    <div><h2 class="title4">Gender :</h2> <input type="text" id="inp4" placeholder="Male/Female/TG"></div>
+    <div><h2 class="title5">caste :</h2> <input type="text" id="inp5" placeholder="ST/SC/OBC/GEN"></div>
+    <div><h2 class="title6">Date of birth :</h2>
+
+        <select id="dd" name="Date">
+            <option value="DD">DD</option>
+        </select>
+        <select id="mm" name="Month">
+            <option value="MM">MM</option>
+        </select>
+        <select id="yy" name="Year">
+            <option value="YYYY">YYYY</option>
+        </select></div>
+        <hr>
+        <h2 class="note">*For registration Adhar or PAN verification is required.</h2>
+        
+        <select name="verification" id="main">
+            <option value="select"></option>
+            <option value="Addhar card">Addhar card</option>
+            <option value="PAN card">PAN card</option>
+        </select>
+        <button onclick="verify()" id="but2">check</button>
+        <div id="gen"></div>
+        <hr>
+  
+
+    <script src="task3.js"></script>
+
+</body>
+</html>

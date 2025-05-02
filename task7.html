@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bgc">
+<h2>Automatic Background-color change on Reload<br>😎</h2>
+
+    <script>
+        let R=(Math.random()*255);
+        let G=(Math.random()*255);
+        let B=(Math.random()*255);
+
+        document.getElementById('bgc').style.backgroundColor=`rgb(${R},${G},${B})`;
+    </script>
+</body>
+</html>
