@@ -14,6 +14,9 @@
          background-color: rgb(225, 194, 255);
          
       }
+      span{
+         margin-right: 18px;
+      }
       #box{
          border-radius:25px;
          text-align: center;
@@ -22,13 +25,14 @@
          box-shadow: inset 5px 5px 10px rgb(145, 98, 255);
          box-shadow: 5px 5px 10px rgb(145, 98, 255);
          display: inline-block;
-         height:250px;
+         height:350px;
          width: 450px;
          overflow-y:hidden;
       }
-      #inp{
+      #inp,#dt{
          border: 1px solid black;
          padding-left: 15px;
+         padding-right: 15px;
          margin-top: 10px;
          border-radius: 18px;
          font-weight: bolder;
@@ -45,6 +49,7 @@
       #ptag{
          font-weight: bolder;
          font-size: larger;
+         word-spacing: 10px;
       }
    </style>
 </head>
@@ -52,9 +57,12 @@
    <h1>*Todo-List*</h1>
    <div id="box">
       <input id="inp" type="text" placeholder="Enter Task" required>
+      <input id="dt" type="date" required>
       <button id="but" onclick="addTask()">ADD</button>
       <div id="container"></div>
    </div>
-   <script src="task9.js"></script>
+   <script src="task11.js"></script>
 </body>
 </html>
+
+
