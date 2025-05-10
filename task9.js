@@ -17,8 +17,9 @@
       function renderTask(){
          let html="";
          for(let i=0;i<arr.length;i++){
-            html+=`<p id='ptag'><span>${arr[i].task}</span><span>${arr[i].date}</span>
-                   <span><button id='but1' onclick='deleteTask(${i})'>Delete</button></span>
+            html+=`<p id='ptag'><span>${arr[i].task}</span>
+                                <span>${arr[i].date}</span>
+                                <span><button id='but1' onclick='deleteTask(${i})'>Delete</button></span>
                    </p>`;
          }
 
